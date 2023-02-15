@@ -8,7 +8,5 @@ class Solution:
         
         for n in s2:
             reverse = n + reverse
-        
-        print(s2)
-        print(reverse)
+
         return reverse == s2
