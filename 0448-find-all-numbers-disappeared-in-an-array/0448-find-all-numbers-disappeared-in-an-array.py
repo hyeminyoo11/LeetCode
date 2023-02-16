@@ -6,9 +6,7 @@ class Solution:
         res = []
         
         for n in ran:
-            if n in nums1:
-                pass
-            else:
+            if n not in nums1:
                 res.append(n)
-        
+
         return res
