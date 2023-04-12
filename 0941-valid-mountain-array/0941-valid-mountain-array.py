@@ -10,8 +10,8 @@ class Solution:
         if m_ind == 0 or m_ind == len(arr)-1:
             return False
         
-        for i in range(1, m_ind+1):
-            if arr[i] <= arr[i-1]:
+        for i in range(0, m_ind):
+            if arr[i] >= arr[i+1]:
                 return False
         
         for i in range(m_ind, len(arr)-1):
