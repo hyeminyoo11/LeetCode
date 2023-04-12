@@ -3,14 +3,14 @@ class Solution:
         
         nums.sort()
         
-        print(nums)
-        
-        i = 0
+        i, j = 0, len(nums)-1
         res = -1
         
-        for i in range(len(nums)-1):
-            for j in range(i+1, len(nums)):
-                if nums[i] + nums[j] < k:
-                    res = max(res, nums[i] + nums[j])
-        
-        return(res)
+        while i < j:
+            if nums[i] + nums[j] < k:
+                res = max(res, nums[i] + nums[j])
+                i += 1
+            else:
+                j -= 1
+            
+        return res
