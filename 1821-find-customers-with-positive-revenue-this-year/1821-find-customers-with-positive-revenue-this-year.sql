@@ -2,5 +2,4 @@
 
 SELECT customer_id
 FROM Customers
-GROUP BY customer_id, year
-HAVING year = 2021 AND SUM(revenue) > 0
+WHERE year = 2021 AND revenue > 0
