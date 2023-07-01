@@ -10,3 +10,4 @@ FROM Candidates c
 LEFT JOIN score_above s
 ON c.interview_id = s.interview_id
 WHERE c.years_of_exp >=2 and s.sum_score > 15
+;
